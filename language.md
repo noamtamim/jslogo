@@ -1,5 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+<div dir="rtl">
+  
 # תנועה
 - הליכה 100 צעדים קדימה: **קד 100**
 - הליכה 100 צעדים אחורה: **אח 100**
@@ -47,3 +48,4 @@
     <td style="background-color: gray;">15</td>
   </tr>
 </table>
+</div>
