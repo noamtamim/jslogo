@@ -3,6 +3,7 @@
   header, footer {
     display: none;
   }
+  body { direction: rtl; }
 </style>
 
 # תנועה
