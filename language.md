@@ -17,7 +17,7 @@
     <td style="background-color: cyan;">3</td>
   </tr>
   <tr>
-    <td style="background-color: red;">4</td>
+    <td style="background-color: red; color: white;">4</td>
     <td style="background-color: magenta;">5</td>
     <td style="background-color: yellow;">6</td>
     <td style="background-color: white;">7</td>
@@ -29,7 +29,7 @@
     <td style="background-color: aquamarine;">11</td>
   </tr>
   <tr>
-    <td style="background-color: salmon;">12</td>
+    <td style="background-color: salmon; color: white;">12</td>
     <td style="background-color: purple; color: white;">13</td>
     <td style="background-color: orange;">14</td>
     <td style="background-color: gray;">15</td>
