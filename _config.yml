@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
+title: PlayKit
+description: Kaltura Player SDK
+github:
+  is_project_page: false
