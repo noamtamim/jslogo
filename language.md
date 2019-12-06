@@ -5,7 +5,7 @@
 
 
 
-<div>
+
   <style>
     #colortable td { width: 25%; padding-left: 4px; padding-right: 4px; text-align: center; }
   </style>
@@ -15,6 +15,7 @@
       <td style="background-color: blue;">1<br>כחול
       <td style="background-color: lime;">2<br>ירוק
       <td style="background-color: cyan;">3<br>תכלת
+    </tr>
     <tr>
       <td style="background-color: red;">4<br>אדום
       <td style="background-color: magenta;">5<br>מגנטה
