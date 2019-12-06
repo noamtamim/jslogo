@@ -3,3 +3,5 @@ title: לוגו
 description: לוגו
 github:
   is_project_page: false
+
+theme: jekyll-theme-tactile
