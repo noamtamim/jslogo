@@ -274,6 +274,8 @@ function initInput() {
       lineComment: ';',
       keyMap: 'single-line'
     });
+    cm.setOption("direction", "rtl");
+    cm.setOption("autoCloseBrackets", false);
     $('#logo-ta-single-line + .CodeMirror').id = 'logo-cm-single-line';
 
     // https://stackoverflow.com/questions/13026285/codemirror-for-just-one-line-textfield
@@ -298,6 +300,8 @@ function initInput() {
     });
     $('#logo-ta-multi-line + .CodeMirror').id = 'logo-cm-multi-line';
     cm2.setSize('100%', '100%');
+    cm2.setOption("direction", "rtl");
+    cm2.setOption("autoCloseBrackets", false);
 
     // Handle ctrl+enter in Multi-Line
     cm2.on('keydown', function(instance, event) {
