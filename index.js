@@ -29,7 +29,6 @@ var logo, turtle;
 
 // Later scripts may override this to customize the examples.
 // Leave it exposed as a global.
-var examples = 'examples.txt';
 
 
 //
@@ -697,8 +696,7 @@ window.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    var lang = queryParams.lang || navigator.language || navigator.userLanguage;
-    if (!lang) return Promise.resolve();
+    var lang = 'he';
 
     // TODO: Support locale/fallback
     lang = lang.split('-')[0];
@@ -720,30 +718,6 @@ window.addEventListener('DOMContentLoaded', function() {
         document.body.lang = 'en';
       });
   }());
-
-  // Populate languages selection list
-  fetch('l10n/languages.txt')
-    .then(function(response) {
-      if (!response.ok) throw Error(response.statusText);
-      return response.text();
-    })
-    .then(function(text) {
-      var select = $('#select-lang');
-      text.split(/\r?\n/g).forEach(function(entry) {
-        var match = /^(\w+)\s+(.*)$/.exec(entry);
-        if (!match) return;
-        var opt = document.createElement('option');
-        opt.value = match[1];
-        opt.textContent = match[2];
-        select.appendChild(opt);
-      });
-      select.value = document.body.lang;
-      select.addEventListener('change', function() {
-        var url = String(document.location);
-        url = url.replace(/[\?#].*/, '');
-        document.location = url + '?lang=' + select.value;
-      });
-    });
 
   localizationComplete.then(initInput);
 
